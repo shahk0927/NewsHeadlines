@@ -19,8 +19,11 @@ import com.bumptech.glide.request.RequestOptions;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
+import java.net.URL;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import retrofit2.http.Url;
 
 public class NewsDetailActivity extends AppCompatActivity implements AppBarLayout.OnOffsetChangedListener {
 
@@ -56,6 +59,7 @@ public class NewsDetailActivity extends AppCompatActivity implements AppBarLayou
 
         Intent intent = getIntent();
         mUrl = intent.getStringExtra("url");
+        mTitle = intent.getStringExtra("title");
         RequestOptions requestOptions = new RequestOptions();
        // requestOptions.error(Utils.getRandomDrawbleColor());
 
@@ -133,10 +137,11 @@ public class NewsDetailActivity extends AppCompatActivity implements AppBarLayou
         else if( id == R.id.share){
             try{
                 Intent i = new Intent(Intent.ACTION_SEND);
-                i.setType("Text/plan");
+                i.setType("text/html");
                 i.putExtra(Intent.EXTRA_SUBJECT, mSource);
-                String body = mTitle + "\n" + mUrl + "\n" + "Share from the News App" + "\n";
+                String body = mTitle + "\n\n" + mUrl + "\n\n" + "Share from the Headlines App" + "\n";
                 i.putExtra(Intent.EXTRA_TEXT, body);
+
                 startActivity(Intent.createChooser(i,"Share with: "));
             }catch (Exception e){
                 Toast.makeText(this,"Hmm.. Sorry, \nCannot be shared", Toast.LENGTH_SHORT).show();

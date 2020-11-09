@@ -79,7 +79,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         holder.source.setText(model.getSource().getName());
         holder.time.setText(" \u2022 "+Utils.DateToTimeFormat(model.getPublishedAt()));
         holder.published_ad.setText(Utils.DateFormat(model.getPublishedAt()));
-        holder.author.setText(model.getAuthor());
+      //  holder.author.setText(model.getAuthor());
     }
 
     @Override
@@ -107,7 +107,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
             itemView.setOnClickListener(this);
             title = itemView.findViewById(R.id.title);
             desc = itemView.findViewById(R.id.desc);
-            author = itemView.findViewById(R.id.author);
+           // author = itemView.findViewById(R.id.author);
             published_ad = itemView.findViewById(R.id.PublishedAt);
             source = itemView.findViewById(R.id.source);
             time = itemView.findViewById(R.id.time);

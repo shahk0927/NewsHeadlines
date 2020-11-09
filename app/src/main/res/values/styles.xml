@@ -5,7 +5,17 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
     </style>
+
+    <style name="DarkAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorTextSubtitle</item>
+        <item name="colorPrimaryDark">@color/colorTextTitle</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>

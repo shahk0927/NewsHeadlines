@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.t00619314.stocknews2.MainActivity"
+    tools:context="com.pro.headlines.MainActivity"
     >
 
     <item
@@ -11,7 +11,7 @@
         android:title="Search"
         android:icon="@drawable/ic_search"
         app:showAsAction="collapseActionView|always"
-        app:actionViewClass="android.widget.SearchView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
         android:theme="@android:style/Theme.Holo.Light.DarkActionBar"/>
     <item
         android:id="@+id/action_settings"

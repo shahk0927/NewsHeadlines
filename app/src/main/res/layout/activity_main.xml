@@ -30,7 +30,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="16dp"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@font/roboto_medium"
                     android:text="Top Headlines"
                     android:textColor="@color/colorTextTitle"
                     android:textSize="17sp"
