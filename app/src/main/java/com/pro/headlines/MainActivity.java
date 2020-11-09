@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         errorMessage = findViewById(R.id.errorMessage);
         btnRetry = findViewById(R.id.btnRetry);
 
+
     }
     public void LoadJson(final String keyword){
 
@@ -191,13 +192,17 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         int id = item.getItemId();
         switch (id){
             case R.id.action_settings:
-                Toast.makeText(MainActivity.this, "Settings", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, SettingActivity.class);
+                startActivity(intent);
                 break;
         }
         return super.onOptionsItemSelected(item);
 
     }
-
+    public boolean onSupportNavigateUp(){
+        onBackPressed();
+        return super.onSupportNavigateUp();
+    }
 
 
     @Override

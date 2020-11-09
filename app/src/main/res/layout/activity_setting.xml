@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_share1"
+            android:drawablePadding="30dp"
+            android:text="Share this app"
+            android:fontFamily="@font/roboto"
+            android:textColor="#2C2C2C"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"
+            android:layout_marginStart="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llExit"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_exit"
+            android:drawablePadding="30dp"
+            android:text="Exit"
+            android:fontFamily="@font/roboto"
+            android:textColor="#2C2C2C"
+            android:layout_gravity="center_vertical"
+            android:textSize="16dp"
+            android:layout_marginStart="40dp"/>
+    </LinearLayout>
+
+</LinearLayout>
